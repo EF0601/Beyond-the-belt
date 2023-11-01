@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond the Belt</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Beyond the belt</h1>
+    <div id="main">
+        <div class="slab">
+            <h3>Construct...</h3>
+            <h4>Grids used:</h4>
+            <div id="areaLeftBarOut"><div id="areaLeftBar">0/25</div></div>
+            <!-- <button>Construct industry. Boosts 6 exports and grants 2 employment slots.</button>
+            <button>Construct habitat. Boosts population slots by 2. Adds $1 to cost per season.</button> -->
+            <div class="centerAlign">
+                <input type="text" id="constructorSearcher" onkeyup="constructorSearcher()" placeholder="Search..">
+            </div>
+            <div id="constructorUL">
+                <li class="constructBtns">
+                    <div class="centerAlign">
+                        <h3>Industry</h3>
+                    </div>
+                    <table>
+
+                        <tr>
+                            <td>Cost:</td>
+                            <td>-5</td>
+                        </tr>
+                        <tr>
+                            <td>Imports/Exports:</td>
+                            <td>+6 exports</td>
+                        </tr>
+                        <tr>
+                            <td>Population:</td>
+                            <td>+2 employment slots</td>
+                        </tr>
+                        <tr>
+                            <td>Happiness</td>
+                            <td>+0</td>
+                        </tr>
+                        <tr>
+                            <td>Power</td>
+                            <td>-1 KWH / day</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>-0.75 kiloLiter / day</td>
+                        </tr>
+                        <tr>
+                            <td>Resource</td>
+                            <td>-1 units / day</td>
+                        </tr>
+                        <tr>
+                            <td>Area</td>
+                            <td>-8 grids</td>
+                        </tr>
+                    </table>
+                    <div class="centerAlign">
+                        <button>Construct</button>
+                    </div>
+                </li>
+                <li class="constructBtns">
+                    <div class="centerAlign">
+                        <h3>Household</h3>
+                    </div>
+                    <table>
+
+                        <tr>
+                            <td>Cost:</td>
+                            <td>-2</td>
+                        </tr>
+                        <tr>
+                            <td>Imports/Exports:</td>
+                            <td>-2 imports</td>
+                        </tr>
+                        <tr>
+                            <td>Population:</td>
+                            <td>+4 population slots</td>
+                        </tr>
+                        <tr>
+                            <td>Happiness</td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <td>Power</td>
+                            <td>-0.25 KWH / day</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>-0.25 kiloLiter / day</td>
+                        </tr>
+                        <tr>
+                            <td>Resource</td>
+                            <td>-2 units / day</td>
+                        </tr>
+                        <tr>
+                            <td>Area</td>
+                            <td>-3 grids</td>
+                        </tr>
+                    </table>
+                    <div class="centerAlign">
+                        <button>Construct</button>
+                    </div>
+                </li>
+                <li class="constructBtns">
+                    <div class="centerAlign">
+                        <h3>Solar Panel</h3>
+                    </div>
+                    <table>
+
+                        <tr>
+                            <td>Cost:</td>
+                            <td>-10</td>
+                        </tr>
+                        <tr>
+                            <td>Imports/Exports:</td>
+                            <td>+0 exports</td>
+                        </tr>
+                        <tr>
+                            <td>Population:</td>
+                            <td>+0 employment slots</td>
+                        </tr>
+                        <tr>
+                            <td>Happiness</td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <td>Power</td>
+                            <td>+2.5 KWH / day</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>-0.05 kiloLiter / day</td>
+                        </tr>
+                        <tr>
+                            <td>Resource</td>
+                            <td>+0 units / day</td>
+                        </tr>
+                        <tr>
+                            <td>Area</td>
+                            <td>-6 grids</td>
+                        </tr>
+                    </table>
+                    <div class="centerAlign">
+                        <button>Construct</button>
+                    </div>
+                </li>
+                <li class="constructBtns">
+                    <div class="centerAlign">
+                        <h3>Ice extractor</h3>
+                    </div>
+                    <table>
+
+                        <tr>
+                            <td>Cost:</td>
+                            <td>-10</td>
+                        </tr>
+                        <tr>
+                            <td>Imports/Exports:</td>
+                            <td>+0 exports</td>
+                        </tr>
+                        <tr>
+                            <td>Population:</td>
+                            <td>+0 employment slots</td>
+                        </tr>
+                        <tr>
+                            <td>Happiness</td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <td>Power</td>
+                            <td>-0.5 KWH / day</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>+2.5 kiloLiter / day</td>
+                        </tr>
+                        <tr>
+                            <td>Resource</td>
+                            <td>+0 units / day</td>
+                        </tr>
+                        <tr>
+                            <td>Area</td>
+                            <td>-4 grids</td>
+                        </tr>
+                    </table>
+                    <div class="centerAlign">
+                        <button>Construct</button>
+                    </div>
+                </li>
+                <li class="constructBtns">
+                    <div class="centerAlign">
+                        <h3>Greenhouse</h3>
+                    </div>
+                    <table>
+
+                        <tr>
+                            <td>Cost:</td>
+                            <td>-7</td>
+                        </tr>
+                        <tr>
+                            <td>Imports/Exports:</td>
+                            <td>+0 exports</td>
+                        </tr>
+                        <tr>
+                            <td>Population:</td>
+                            <td>+1 employment slots</td>
+                        </tr>
+                        <tr>
+                            <td>Happiness</td>
+                            <td>+1</td>
+                        </tr>
+                        <tr>
+                            <td>Power</td>
+                            <td>-0.75 KWH / day</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>-1.0 kiloLiter / day</td>
+                        </tr>
+                        <tr>
+                            <td>Resource</td>
+                            <td>+10 units / day</td>
+                        </tr>
+                        <tr>
+                            <td>Area</td>
+                            <td>-7 grids</td>
+                        </tr>
+                    </table>
+                    <div class="centerAlign">
+                        <button>Construct</button>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <div class="slab">
+            <h3>Game logs...</h3>
+            <div class="citizenMessage" id="citizenMessage1">
+                <p>! Out of resources !</p>
+            </div>
+            <div class="citizenMessage" id="citizenMessage2">
+                <p>! Out of power !</p>
+            </div>
+            <div class="citizenMessage" id="citizenMessage3">
+                <p>! Out of water !</p>
+            </div>
+            <div class="citizenMessage" id="citizenMessage3">
+                <p>! Income negative !</p>
+            </div>
+            <div class="citizenMessage" id="citizenMessage3">
+                <p>! Population zero !</p>
+            </div>
+            <div class="citizenMessage" id="citizenMessage3">
+                <p>! Employment 0% !</p>
+            </div>
+        </div>
+        <div class="slab">
+            <h3>Statistics at a glance...</h3>
+            <table style="font-size: 15px;">
+                <tr>
+                    <td>Population:</td>
+                    <td>0</td>
+                    <td>+0</td>
+                </tr>
+                <tr>
+                    <td>Power:</td>
+                    <td>0 KWH</td>
+                    <td>+0 KWH / day</td>
+                </tr>
+                <tr>
+                    <td>Water:</td>
+                    <td>0 kiloLiter</td>
+                    <td>+0 kiloLiter / day</td>
+                </tr>
+                <tr>
+                    <td>Resource:</td>
+                    <td>0 units</td>
+                    <td>+0 units / day</td>
+                </tr>
+                <tr>
+                    <td>Cash:</td>
+                    <td>0</td>
+                    <td>+0 / day</td>
+                </tr>
+            </table>
+        </div>
+        <div class="slab">
+            <h3>No tabs opened...</h3>
+            <p>To open a tab, click the buttons</p>
+        </div>
+    </div>
+    <div id="bottomBar">
+        <div id="seasonCounter">Season 1</div>
+        <div><input type="text" value="Sector Zero"></div>
+        <div id="tabButtons">
+            <button>Economy</button>
+            <button>Services</button>
+            <button>Imports & Exports</button>
+            <button>Policies</button>
+            <button>Security</button>
+        </div>
+    </div>
+</body>
+<script src="./javascript/constructorSearcher.js"></script>
+</html>

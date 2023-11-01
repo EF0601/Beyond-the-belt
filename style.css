@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    /* display: grid; */
+    /* grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%; */
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+#main{
+    /* height: 600px; */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+}
+.slab{
+    background-color: rgb(39, 42, 42);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 25px;
+    overflow: scroll;
+    height: 500px;
+}
+#bottomBar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    /* margin: 2.5%; */
+}
+#bottomBar input,
+#bottomBar button,
+#bottomBar #seasonCounter{
+    padding: 10px;
+    background-color: rgb(39, 30, 30);
+    color: white;
+    border: 1px solid white;
+    outline: none;
+}
+#bottomBar input:hover,
+#bottomBar button:hover,
+#bottomBar #seasonCounter:hover{
+    background-color: rgb(39, 42, 42);
+}
+input,
+button{
+    font-family: 'Roboto Mono', monospace;
+}
+.citizenMessage{
+    background-color: rgb(39, 30, 30);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    /* height: 25%; */
+    font-size: 14px;
+}
+.constructBtns{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(39, 30, 30);
+    font-size: small;
+}
+.constructBtns button{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 75%;
+    background-color: rgb(39, 30, 30);
+    color: white;
+    border: 1px solid white;
+}
+.constructBtns button:hover{
+    background-color: rgb(39, 42, 42);
+}
+.centerAlign{
+    text-align: center;
+}
+#areaLeftBarOut{
+    background-color: gray;
+    border-radius: 25px;
+    height: 25px;
+    width: 70%;
+    margin: auto;
+}
+#areaLeftBar{
+    background-color: red;
+    height: 25px;
+    width: 10%;
+    border-radius: 25px;
+    padding: 2px;
+}
+#constructorUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#constructorSearcher{
+    border-radius: 25px;
+    height: 25px;
+    margin: auto;
+    border: none;
+    outline: none;
+    padding: 2px;
+    margin: 10px;
+}
+tr:hover,
+td:hover{
+    border: 1px solid white;
+}
+@media only screen and (max-width: 1400px) {
+  #main{
+    display: block;
+  }
+}
