@@ -22,6 +22,7 @@
                 <input type="text" id="constructorSearcher" onkeyup="constructorSearcher()" placeholder="Search..">
             </div>
             <div id="constructorUL">
+                <div class="centerAlign"><h2>Tier 1</h2></div>
                 <li class="constructBtns">
                     <div class="centerAlign">
                         <h3>Industry</h3>
@@ -62,7 +63,7 @@
                         </tr>
                     </table>
                     <div class="centerAlign">
-                        <button>Construct</button>
+                        <button onclick="construct({name: 'industry1', imports: 0, exports: 6, cost: 5, employmentChange: 2, populationChange: 0, happiness: 0, power: -1, water: -0.75, resource: -1, area: 8})">Construct</button>
                     </div>
                 </li>
                 <li class="constructBtns">
@@ -105,7 +106,7 @@
                         </tr>
                     </table>
                     <div class="centerAlign">
-                        <button>Construct</button>
+                        <button onclick="construct({name: 'house1', imports: -2, exports: 0, cost: 2, employmentChange: 0, populationChange: 4, happinessChange: 1, power: -0.25, water: -0.25, resource: -2, area: 3})">Construct</button>
                     </div>
                 </li>
                 <li class="constructBtns">
@@ -148,7 +149,7 @@
                         </tr>
                     </table>
                     <div class="centerAlign">
-                        <button>Construct</button>
+                        <button onclick="construct({name: 'solar1', imports: 0, exports: 0, cost: 10, populationChange: 0, employmentChange: 0, happinessChange: 1, power: 2.5, water: -0.05, resource: 0, area: 6})">Construct</button>
                     </div>
                 </li>
                 <li class="constructBtns">
@@ -191,7 +192,7 @@
                         </tr>
                     </table>
                     <div class="centerAlign">
-                        <button>Construct</button>
+                        <button onclick="construct({name: 'water1', cost: 10, imports: 0, exports: 0,  populationChange: 0, happinessChange: 1, power: -0.5, water: 2.5, resource: 0, area: 4})">Construct</button>
                     </div>
                 </li>
                 <li class="constructBtns">
@@ -234,7 +235,7 @@
                         </tr>
                     </table>
                     <div class="centerAlign">
-                        <button>Construct</button>
+                        <button onclick="construct({name: 'greenhouse1', cost: 7, imports: 0, exports: 0, populationChange: 0, employmentChange: 1, happinessChange: 1, power: -0.75, water: -1, resource: 10, area: 7})">Construct</button>
                     </div>
                 </li>
                 <li class="constructBtns" id="comTowerBox">
@@ -280,9 +281,12 @@
                         </tr>
                     </table>
                     <div class="centerAlign">
-                        <button>Construct</button>
+                        <button onclick="construct({name: 'comTower', cost: 10, imports: 0, exports: 0, populationChange: 0, employmentChange: 1, happinessChange: 1, power: -1, water: -0.05, resource: 0, area: 3})">Construct</button>
                     </div>
                 </li>
+                <div class="centerAlign">
+                    <h2>Tier 2</h2>
+                </div>
             </div>
         </div>
         <div class="slab">
@@ -355,4 +359,5 @@
     </div>
 </body>
 <script src="./javascript/constructorSearcher.js"></script>
+<script src="./javascript/main.js"></script>
 </html>
